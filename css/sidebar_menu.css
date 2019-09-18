@@ -1,0 +1,139 @@
+
+/*Inicio - Estilo Cuerpo*/
+body
+{
+	background: #252528;
+	color: rgba(255,255,255,.4);
+	padding: 0 1em;
+	font-family: sans-serif;
+}
+
+h1{
+	padding-top: 20px;
+	text-align: right;
+	color: rgba(255,255,255,.7);
+}
+
+article{
+	padding: .5em 0;
+}
+
+footer{
+	margin-top: 2em;
+	border-top: 1px solid rgba(255,255,255,.1);
+	padding-top: 1em;
+	text-align: right;
+	font-size: .8em;
+
+}
+
+
+/*Inicio - Menú*/
+
+.menu
+{
+	list-style: none;
+	line-height: 42px;
+	padding-left: 0;
+	width: 15em;
+
+	/*outline: 	1px solid green;*/
+}
+
+.menu ul{
+	list-style: none;
+}
+
+.menu a{
+	color: #ddd;
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;		
+	width: 100%;
+}
+
+.menu a:hover{
+	margin-left: 0.5em;
+	--webkit-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+
+.menu .opcion_principal{
+	/*outline: 1px solid red;*/
+	/*border-left: 	3px solid rgba(255,255,255,.2);*/
+	box-shadow: 3px  0px rgba(255,255,255,.2) inset;
+	margin-bottom: 5px;
+	padding-left: 1em;
+
+	--webkit-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+
+.menu .opcion_principal:hover{
+	box-shadow: 15em 0  rgba(255,255,255,.2) inset;
+}
+
+.menu .opcion_secundaria{
+	font-size: 12.5px;
+}
+
+.icono_menu{
+	padding-right: 10px;
+}
+
+img.logo{
+	position: absolute;
+	border-radius: 5px;
+	left: 40px; 
+	height: 30px;
+	width: 165px;
+
+}
+.content {
+ 	display: none;
+  	overflow: hidden;
+  	background-color: #252528;
+  	width: 14em;
+}
+
+/*Fin - Menú*/
+
+
+/*Posición del Menu*/
+
+nav{	
+	background: rgba(0,0,0,.7);
+	position: absolute;
+	padding-right: .25em;
+	padding-top: 4em;
+	left: -18em; /*Por el ancho del menú*/
+	top: -1;
+	z-index: 20;
+	height: 100%;
+	/*Transition para que el efecto de toggle del menú se sienta menos tosco*/
+	transition: all .5s;
+}
+
+nav.mostrar{
+	left: 0;
+	outline: 	1px solid green;
+}
+
+.mostrar-nav{
+	position: absolute;
+	cursor:pointer;
+	top: 1.5em;
+	left: 1em;
+	width: 205px; /*Para acomodar el logo*/
+	height: 30px;
+	padding-left: 5px;
+	margin-bottom: 10px;
+	z-index: 30;
+	filter: invert(0%);
+	/*position: fixed;*//*Dejar estático el menú*/
+}
+
+/*Fin - Posición del Menu*/
+
